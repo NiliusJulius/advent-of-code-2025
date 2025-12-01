@@ -1,0 +1,39 @@
+📦 files 🏠
+
+🏁🍇
+  🆕🍨🐚🔡🍆❗ ➡ 🖍🆕directions
+  🆕🍨🐚🔢🍆❗ ➡ 🖍🆕amounts
+  50 ➡️ 🖍🆕 dial
+  0 ➡️ 🖍🆕 zeroCount
+
+  🍺📇🐇📄 🔤./day1/input.txt🔤 ❗ ➡ inputFile
+  🍺🔡 inputFile ❗ ➡ input
+  🔫 input 🔤❌n🔤 ❗ ➡ lines
+  🔂 line lines 🍇
+    🔫 line 🔤   🔤 ❗ ➡ parts
+    🐻 directions 🔪 line 0 1 ❗❗️
+    🐻 amounts 🍺🔢🔪 line 1 3 ❗ 10 ❗❗
+  🍉
+
+  🔂 i 🆕⏩ 0 📏 directions ❓ 1 ❗️ 🍇
+    ↪️ 🐽 directions i ❗ 🙌 🔤L🔤 🍇
+      dial ⬅️ ➖ 🐽 amounts i ❗
+    🍉 🙅 🍇
+      dial ⬅️ ➕ 🐽 amounts i ❗
+    🍉
+
+    🔁 dial ◀️ 0 🍇
+        dial ⬅️ ➕ 100
+    🍉
+    🔁 dial ▶️ 99 🍇
+      dial ⬅️ ➖ 100
+    🍉
+
+    ↪️ dial 🙌 0 🍇
+      zeroCount ⬅️ ➕ 1
+    🍉
+    
+  🍉
+
+  😀 🔡 zeroCount ❗️ ❗️
+🍉

@@ -1,0 +1,27 @@
+📦 files 🏠
+
+🏁🍇
+  0 ➡️ 🖍🆕 invalidSummation
+
+  🍺📇🐇📄 🔤./day2/input.txt🔤 ❗ ➡ file
+  🍺🔡 file ❗ ➡ text
+  🔫 text 🔤❌n🔤 ❗ ➡ lines
+  🔂 line lines 🍇
+    🔫 line 🔤,🔤 ❗ ➡ ranges
+    🔂 range ranges 🍇
+      🔫 range 🔤-🔤 ❗ ➡ rangeEnds
+      🔂 i 🆕⏩ 🍺🔢🐽 rangeEnds 0 ❗ 10 ❗ 🍺🔢🐽 rangeEnds 1 ❗ 10 ❗ ➕ 1 1 ❗️ 🍇
+        📏 🎶 🔡 i 10 ❗ ❗ ❓ ➡️ stringLength
+        ↪️ stringLength 🚮 2 🙌 0 🍇
+          ↪️ 🔪 🔡 i 10 ❗ 0 stringLength ➗ 2 ❗ 🙌 🔪 🔡 i 10 ❗ stringLength ➗ 2 stringLength ➖ 1 ❗ 🍇
+            invalidSummation ⬅️ ➕ i
+          🍉
+        🍉
+      🍉
+    🍉
+  🍉
+
+  
+
+  😀 🔡 invalidSummation ❗️ ❗️
+🍉

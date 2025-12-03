@@ -1,0 +1,74 @@
+📦 files 🏠
+
+🏁🍇
+  0 ➡️ 🖍🆕 joltage
+
+  🍺📇🐇📄 🔤./day3/input.txt🔤 ❗ ➡ file
+  🍺🔡 file ❗ ➡ text
+  🔫 text 🔤❌n🔤 ❗ ➡ lines
+  📏 lines ❓ ➡️ lineCount
+  🔂 lineNumber 🆕⏩ 0 lineCount 1 ❗ 🍇
+    
+    🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 one
+    🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 two
+    🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 three
+    🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 four
+    🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 five
+    🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 six
+    🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 seven
+    🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 eight
+    🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 nine
+
+    🎶 🐽 lines lineNumber ❗️ ❗ ➡ batteries
+    📏 batteries ❓ ➡️ bankLength
+    🔂 i 🆕⏩ 0 bankLength 1 ❗ 🍇
+      🐽 batteries i ❗ ➡️ battery
+      ↪️ battery 🙌 🔤1🔤 🍇
+        🐻 one i ❗️
+      🍉 🙅↪️ battery 🙌 🔤2🔤 🍇
+        🐻 two i ❗️
+      🍉 🙅↪️ battery 🙌 🔤3🔤 🍇
+        🐻 three i ❗️
+      🍉 🙅↪️ battery 🙌 🔤4🔤 🍇
+        🐻 four i ❗️
+      🍉 🙅↪️ battery 🙌 🔤5🔤 🍇
+        🐻 five i ❗️
+      🍉 🙅↪️ battery 🙌 🔤6🔤 🍇
+        🐻 six i ❗️
+      🍉 🙅↪️ battery 🙌 🔤7🔤 🍇
+        🐻 seven i ❗️
+      🍉 🙅↪️ battery 🙌 🔤8🔤 🍇
+        🐻 eight i ❗️
+      🍉 🙅↪️ battery 🙌 🔤9🔤 🍇
+        🐻 nine i ❗️
+      🍉
+    🍉
+    
+    🍿 🔤1🔤 ➡️ one 🔤2🔤 ➡️ two 🔤3🔤 ➡️ three 🔤4🔤 ➡️ four 🔤5🔤 ➡️ five 🔤6🔤 ➡️ six 🔤7🔤 ➡️ seven 🔤8🔤 ➡️ eight 🔤9🔤 ➡️ nine 🍆 ➡️ bank
+    
+    0 ➡️ 🖍🆕 packJoltage
+    -1 ➡️ 🖍🆕 largestIndexUsed
+    12 ➡️ batteriesPerBank
+    0 ➡️ 🖍🆕 batteriesFound
+
+    🔂 nthBattery 🆕⏩ 0 batteriesPerBank 1 ❗️ 🍇
+      🔂 listNumber 🆕⏩ 9 0 -1 ❗️ 🍇
+        ↪️ batteriesFound 🙌 nthBattery 🍇
+          🍺 🐽 bank 🔡 listNumber ❗️ ❗ ➡️ numberList
+          🔂 index numberList 🍇
+            ↪️ batteriesFound 🙌 nthBattery 🍇
+              ↪️ largestIndexUsed ◀️ index 🤝 index ◀️🙌 bankLength ➖ batteriesPerBank ➕ nthBattery 🍇
+                packJoltage ⬅️✖️ 10
+                packJoltage ⬅️ ➕ listNumber 
+                batteriesFound ⬅️ ➕ 1
+                index ➡️ 🖍 largestIndexUsed
+              🍉
+            🍉
+          🍉
+        🍉    
+      🍉
+    🍉
+    joltage ⬅️ ➕ packJoltage
+  🍉
+  😀 🔡 joltage ❗️ ❗️
+🍉

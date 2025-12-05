@@ -1,0 +1,41 @@
+📦 files 🏠
+
+🏁🍇
+  💭Sorting function
+  🍇a🔢b🔢➡️ 🔢
+      ↩️ a ➖ b
+  🍉 ➡️ sort
+
+  0 ➡️ 🖍🆕 freshIngredientIdCount
+  🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 leftIngredientIds
+  🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 rightIngredientIds
+
+  🍺📇🐇📄 🔤./day5/input.txt🔤 ❗ ➡ file
+  🍺🔡 file ❗ ➡ text
+  🔫 text 🔤❌n🔤 ❗ ➡ lines
+  🔂 line lines 🍇
+    ↪️ ❎ 🔍 line 🔤-🔤 ❗️ 🙌 🤷‍♀️ ❗️ 🍇
+      🔫 line 🔤-🔤 ❗ ➡ rangeEnds
+      🍺🔢🐽 rangeEnds 0 ❗ 10 ❗ ➡ leftRangeEnd
+        🍺🔢🐽 rangeEnds 1 ❗ 10 ❗ ➡ rightRangeEnd
+      🐻 leftIngredientIds leftRangeEnd ❗️
+      🐻 rightIngredientIds rightRangeEnd ❗️
+    🍉
+  🍉
+
+  🦁 leftIngredientIds sort ❗️
+  🦁 rightIngredientIds sort ❗️
+
+  0 ➡️ 🖍🆕 largestIdUsed
+  🔂 arrayIndex 🆕⏩ 0 📏 leftIngredientIds ❓ 1 ❗️ 🍇
+    🐽 leftIngredientIds arrayIndex ❗️ ➡️ 🖍🆕 leftId
+    🐽 rightIngredientIds arrayIndex ❗️ ➡️ rightId
+    ↪️ leftId ◀️🙌 largestIdUsed 🍇
+      largestIdUsed ➕ 1 ➡️ 🖍 leftId
+    🍉
+    freshIngredientIdCount ⬅️ ➕ rightId ➖ leftId ➕ 1
+    rightId ➡️ 🖍 largestIdUsed
+  🍉
+
+  😀 🔡 freshIngredientIdCount ❗️ ❗️
+🍉

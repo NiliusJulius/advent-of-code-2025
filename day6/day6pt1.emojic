@@ -1,0 +1,54 @@
+📦 files 🏠
+
+🏁🍇
+  💭Check if not empty
+  🍇 input🔡 ➡️ 👌
+    ↩️ ❎ input 🙌 🔤🔤 ❗️
+  🍉 ➡️ isNotEmpty
+
+  0 ➡️ 🖍🆕 totalSum
+  🆕🍨🐚🔡🍆❗ ➡ 🖍🆕 operators
+  🆕🍯🐚🔢🍆❗ ➡ 🖍🆕 numbersDict
+
+  🍺📇🐇📄 🔤./day6/input.txt🔤 ❗ ➡ file
+  🍺🔡 file ❗ ➡ text
+  🔫 text 🔤❌n🔤 ❗ ➡ lines
+  📏 lines ❓ ➡️ lineCount
+  🔂 lineIndex 🆕⏩ 0 lineCount 1 ❗ 🍇
+    🐽 lines lineIndex ❗ ➡️ line
+    🔫 line 🔤 🔤 ❗ ➡ linePartsWithSpaces
+    🐭 linePartsWithSpaces isNotEmpty ❗️ ➡️ lineParts
+    ↪️ lineIndex 🙌 lineCount ➖ 1 🍇
+      🔂 part lineParts 🍇
+        🐻 operators  part ❗️
+      🍉
+    🍉 🙅 🍇
+      🔂 columnIndex 🆕⏩ 0 📏 lineParts ❓ 1 ❗ 🍇
+        lineIndex ✖️ 1000 ➕ columnIndex ➡️ dictLocation
+        🍺🔢 🐽 lineParts columnIndex ❗️ 10 ❗️ ➡️ 🐽 numbersDict 🔡 dictLocation ❗️ ❗️
+      🍉
+    🍉
+  🍉
+
+  📏 operators ❓ ➡️ operatorCount
+  🔂 operatorIndex 🆕⏩ 0 operatorCount 1 ❗ 🍇
+    🐽 operators operatorIndex ❗️ ➡️ operator
+    ↪️ operator 🙌 🔤+🔤 🍇
+      0 ➡️ 🖍🆕 operatorAnswer
+      🔂 lineIndex 🆕⏩ 0 lineCount ➖ 1 1 ❗ 🍇
+        lineIndex ✖️ 1000 ➕ operatorIndex ➡️ dictLocation
+        operatorAnswer ⬅️ ➕ 🍺🐽 numbersDict 🔡 dictLocation ❗️ ❗️
+      🍉
+      totalSum ⬅️ ➕ operatorAnswer
+    🍉 🙅 🍇
+      1 ➡️ 🖍🆕 operatorAnswer
+      🔂 lineIndex 🆕⏩ 0 lineCount ➖ 1 1 ❗ 🍇
+        lineIndex ✖️ 1000 ➕ operatorIndex ➡️ dictLocation
+        operatorAnswer ⬅️ ✖️ 🍺🐽 numbersDict 🔡 dictLocation ❗️ ❗️
+      🍉
+      totalSum ⬅️ ➕ operatorAnswer
+    🍉
+  🍉
+
+  😀 🔡 totalSum ❗️ ❗️
+🍉

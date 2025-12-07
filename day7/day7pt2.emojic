@@ -1,0 +1,70 @@
+📦 files 🏠
+
+🏁🍇
+  🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 beamLocations
+  🆕🍯🐚🔢🍆❗ ➡ 🖍🆕 timelinesFromThisPoint
+
+  🍺📇🐇📄 🔤./day7/input.txt🔤 ❗ ➡ file
+  🍺🔡 file ❗ ➡ text
+  🔫 text 🔤❌n🔤 ❗ ➡ lines
+  🐽 lines 0 ❗ ➡️ firstLine
+  🍺🔍 firstLine 🔤S🔤 ❗ ➡️ startIndex
+  🐻 beamLocations 0 ✖️ 1000 ➕ startIndex ❗️
+
+  🔂 lineIndex 🆕⏩ 📏 lines ❓ ➖ 1 -1 -1 ❗ 🍇
+    🎶 🐽 lines lineIndex ❗️ ❗️ ➡️ line
+    🔂 columnIndex 🆕⏩ 0 📏 line ❓ 1 ❗ 🍇
+      🐽 line columnIndex ❗️ ➡️ character
+      ↪️ character 🙌 🔤^🔤 👐 character 🙌 🔤S🔤 🍇
+        👎 ➡️ 🖍🆕 leftFound
+        👎 ➡️ 🖍🆕 rightFound
+        🔂 lineIndexDown 🆕⏩ lineIndex ➕ 1 📏 lines ❓ 1 ❗ 🍇
+          ↪️ lineIndexDown 🙌 📏 lines ❓ ➖ 1 🍇
+            ↪️ ❎ leftFound ❗️ 🍇
+              0 ➡️ 🖍🆕 existingValue
+              ↪️ rightFound 🍇
+                🍺 🐽 timelinesFromThisPoint 🔡 lineIndex ✖️ 1000 ➕ columnIndex ❗️ ❗️ ➡️ 🖍 existingValue
+              🍉
+              1 ➕ existingValue ➡️ 🐽 timelinesFromThisPoint 🔡 lineIndex ✖️ 1000 ➕ columnIndex ❗️ ❗️
+              👍 ➡️ 🖍 leftFound
+            🍉
+            ↪️ ❎ rightFound ❗️ 🍇
+              0 ➡️ 🖍🆕 existingValue
+              ↪️ leftFound 🍇
+                🍺 🐽 timelinesFromThisPoint 🔡 lineIndex ✖️ 1000 ➕ columnIndex ❗️ ❗️ ➡️ 🖍 existingValue
+              🍉
+              1 ➕ existingValue ➡️ 🐽 timelinesFromThisPoint 🔡 lineIndex ✖️ 1000 ➕ columnIndex ❗️ ❗️
+              👍 ➡️ 🖍 rightFound
+            🍉            
+          🍉 🙅 🍇
+            🎶 🐽 lines lineIndexDown ❗️ ❗️ ➡️ lineDown
+            ↪️ ❎ leftFound ❗️ 🍇
+              🐽 lineDown columnIndex ➖ 1 ❗️ ➡️ characterDownLeft
+              ↪️ characterDownLeft 🙌 🔤^🔤 🍇
+                0 ➡️ 🖍🆕 existingValue
+                ↪️ rightFound 🍇
+                  🍺 🐽 timelinesFromThisPoint 🔡 lineIndex ✖️ 1000 ➕ columnIndex ❗️ ❗️ ➡️ 🖍 existingValue
+                🍉
+                🍺 🐽 timelinesFromThisPoint 🔡 lineIndexDown ✖️ 1000 ➕ columnIndex ➖ 1 ❗️ ❗️ ➕ existingValue ➡️ 🐽 timelinesFromThisPoint 🔡 lineIndex ✖️ 1000 ➕ columnIndex ❗️ ❗️
+                👍 ➡️ 🖍 leftFound
+              🍉
+            🍉
+            ↪️ ❎ rightFound ❗️ 🍇
+              🐽 lineDown columnIndex ➕ 1 ❗️ ➡️ characterDownRight
+              ↪️ characterDownRight 🙌 🔤^🔤 🍇
+                0 ➡️ 🖍🆕 existingValue
+                ↪️ leftFound 🍇
+                  🍺 🐽 timelinesFromThisPoint 🔡 lineIndex ✖️ 1000 ➕ columnIndex ❗️ ❗️ ➡️ 🖍 existingValue
+                🍉
+                🍺 🐽 timelinesFromThisPoint 🔡 lineIndexDown ✖️ 1000 ➕ columnIndex ➕ 1 ❗️ ❗️ ➕ existingValue ➡️ 🐽 timelinesFromThisPoint 🔡 lineIndex ✖️ 1000 ➕ columnIndex ❗️ ❗️
+                👍 ➡️ 🖍 rightFound
+              🍉
+            🍉
+          🍉
+        🍉
+      🍉
+    🍉
+  🍉
+
+  😀 🔡 🍺 🐽 timelinesFromThisPoint 🔡 0 ✖️ 1000 ➕ startIndex ❗️ ❗️ ❗️ ❗️
+🍉

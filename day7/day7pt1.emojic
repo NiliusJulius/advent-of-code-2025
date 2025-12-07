@@ -1,0 +1,48 @@
+📦 files 🏠
+
+🏁🍇
+  🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 beamLocations
+  0 ➡️ 🖍🆕 timesSplit
+
+  🍺📇🐇📄 🔤./day7/input.txt🔤 ❗ ➡ file
+  🍺🔡 file ❗ ➡ text
+  🔫 text 🔤❌n🔤 ❗ ➡ lines
+  🐽 lines 0 ❗ ➡️ firstLine
+  🍺🔍 firstLine 🔤S🔤 ❗ ➡️ startIndex
+  🐻 beamLocations 0 ✖️ 1000 ➕ startIndex ❗️
+
+  🔂 lineIndex 🆕⏩ 1 📏 lines ❓ ➖ 1 1 ❗ 🍇
+    🆕🍨🐚🔢🍆❗ ➡ 🖍🆕 nextBeamLocations
+    🎶 🐽 lines lineIndex ➕ 1 ❗️ ❗️ ➡️ nextLine
+    🔂 beamIndex 🆕⏩ 0 📏 beamLocations ❓ 1 ❗ 🍇
+      🐽 beamLocations beamIndex ❗️ ➡️ locationCoordinate
+      locationCoordinate 🚮 1000 ➡️ columnIndex
+      🐽 nextLine columnIndex ❗️ ➡️ nextLineCharacter
+      ↪️ nextLineCharacter 🙌 🔤.🔤 🍇
+        🤜 lineIndex ➕ 1 🤛 ✖️ 1000 ➕ columnIndex ➡️ nextLocation
+        ↪️ ❎ 🐦 nextBeamLocations nextLocation ❓ ❗️ 🍇
+          🐻 nextBeamLocations nextLocation ❗️
+        🍉
+      🍉 🙅↪️ nextLineCharacter 🙌 🔤^🔤 🍇
+        🤜 lineIndex ➕ 1 🤛 ✖️ 1000 ➕ columnIndex ➖ 1 ➡️ nextLocationLeft
+        🤜 lineIndex ➕ 1 🤛 ✖️ 1000 ➕ columnIndex ➕ 1 ➡️ nextLocationRight
+        👎 ➡️ 🖍🆕 hasSplit
+        ↪️ ❎ 🐦 nextBeamLocations nextLocationLeft ❓ ❗️ 🍇
+          👍 ➡️ 🖍 hasSplit
+          🐻 nextBeamLocations nextLocationLeft ❗️
+        🍉
+        ↪️ ❎ 🐦 nextBeamLocations nextLocationRight ❓ ❗️ 🍇
+          👍 ➡️ 🖍 hasSplit
+          🐻 nextBeamLocations nextLocationRight ❗️
+        🍉
+        ↪️ hasSplit 🍇
+          timesSplit ⬅️ ➕ 1
+        🍉
+      🍉
+    🍉
+    nextBeamLocations ➡️ 🖍 beamLocations
+    🆕🍨🐚🔢🍆❗ ➡ 🖍 nextBeamLocations
+  🍉
+
+  😀 🔡 timesSplit ❗️ ❗️
+🍉
